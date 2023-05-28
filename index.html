@@ -1,0 +1,36 @@
+<!doctype html>
+<head>
+  <title>Connect 4</title>
+  <link href="connect4.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="wrapper">
+  
+  <div class="propmt">
+    <div id="control-wrapper" class="control-wrapper">
+      <h2 style="text-align: center;">Select player color</h2>
+      <div id="content" style="display: flex;flex-direction: column;gap: 30px;">
+        <label for="player-1">
+          <span>Player 1 color</span>
+          <input id="player-1" type="color">
+        </label>
+        <label for="player-2">
+          <span>Player 2 color</span>
+          <input id="player-2" type="color">
+        </label>
+        <button id="start-game">Start Game!</button>
+      </div>
+    </div>
+    <div class="overlay"></div>
+  </div>
+
+  <div id="game">
+    <table id="board"></table>
+  </div>
+</div>
+
+<script src="connect4.js"></script>
+
+</body>
+</html>
